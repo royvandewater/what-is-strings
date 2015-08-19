@@ -1,6 +1,10 @@
 
 #include "gtest/gtest.h"
+#include "the-strings.h"
 
 TEST(theStringsSize, 3) {
-  EXPECT_EQ(1, 2);
+  TheStrings theStrings;
+
+  EXPECT_CALL(theStrings, size())
+  .WillRepeatedly(Return(2));
 }
