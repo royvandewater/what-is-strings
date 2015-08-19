@@ -5,5 +5,5 @@
 
 cd build && \
 cmake  -Dtest=ON .. && \
-make VERBOSE=1
+make VERBOSE=1 && \
 ctest -VV
